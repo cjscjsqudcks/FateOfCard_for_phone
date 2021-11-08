@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity"
+    android:background="@drawable/stayroom_bg2"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/stayroom_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FATE OF CARD"
+            android:textAlignment="center"
+            android:fontFamily="@font/scdream"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/activity_item_roomname"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/stayroom_player"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_item_player1_bg"
+            android:layout_width="124dp"
+            android:layout_height="176dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+             android:gravity="center"
+            android:background="@drawable/choose_bg2"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="닉네임"
+                android:fontFamily="@font/scdream"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:id="@+id/activity_item_player1_1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="첫번째"
+                android:fontFamily="@font/scdream"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:id="@+id/activity_item_player1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_item_player2_bg"
+            android:layout_width="124dp"
+            android:layout_height="176dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+
+            android:gravity="center"
+            android:background="@drawable/card_back"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="닉네임"
+                android:fontFamily="@font/scdream"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:id="@+id/activity_item_player2_1"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:text="두번째"
+                android:fontFamily="@font/scdream"
+                android:textSize="35dp"
+                android:id="@+id/activity_item_player2"
+                android:textColor="#000000"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:background="@drawable/stayroom_itembg"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:text="시작 아이템"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/activity_item_startitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_help"
+                        android:background="@android:color/transparent" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/item_startbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stayroom_press6"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게임 중 사용 아이템"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/scdream"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/main_help"
+                        android:background="@android:color/transparent"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:id="@+id/activity_item_gameitem"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/stayroom_press6"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="2dp"
+
+                    android:id="@+id/item_gamebtn"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stayroom_itemlist"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_allcard"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/item_allcard"
+                    android:layout_marginHorizontal="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginVertical="10dp"
+                    />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_allplayer"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/item_allplayer"
+                    android:layout_marginHorizontal="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginVertical="10dp"
+                    />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_double"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/item_double"
+                    android:adjustViewBounds="true"
+                    android:layout_marginHorizontal="2dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginVertical="10dp"
+                    />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_addcard"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/item_addcard"
+                    android:adjustViewBounds="true"
+                    android:layout_marginHorizontal="2dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginVertical="10dp"
+                    />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_defence"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/item_defence"
+                    android:adjustViewBounds="true"
+                    android:layout_marginHorizontal="2dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginVertical="10dp"
+                    />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_glence"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/item_glence"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginVertical="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|top">
+
+        <ImageButton
+            android:id="@+id/item_play"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/stayroom_play"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
